@@ -13,9 +13,14 @@ x=wave_dir(1);
 y=wave_dir(2);
 z=wave_dir(3);
 %equation for surface(used a parabolic surface)
-eq=x^2-y;
-t=solve(eq);
+eq=z^2-x;
+t=solve(eq)
 %%%%%%%evaluate answer%%%%%%%%%%%
+%%check if e have a solution or not
+if t==false
+    fprintf("no solution available")
+    return
+end
 sizet=size(t);
 %find out how many solitios need to ge checked
 rows=sizet(1);
