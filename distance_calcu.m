@@ -16,6 +16,7 @@ z=wave_dir(3);
 eq=z^2-x;
 t=solve(eq)
 %%%%%%%evaluate answer%%%%%%%%%%%
+%%check if e have a solution or not
 if t==false
     fprintf("no solution available")
     return
